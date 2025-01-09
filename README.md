@@ -7,3 +7,10 @@ To install follow these instructions:
 
 This will install the dependencies for the backend and frontend of the
 application.
+
+You need to create a .env file.
+
+You need to set the environment variables for:
+
+Mongo_URI=<Replace with your MongoDB URI>
+PORT=<Replace with your port number>
