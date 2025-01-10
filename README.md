@@ -12,5 +12,10 @@ You need to create a .env file.
 
 You need to set the environment variables for:
 
-Mongo_URI=<Replace with your MongoDB URI>
-PORT=<Replace with your port number>
+Mongo_URI=
+PORT=
+
+Once cloned and installed, run the following from the main
+project folder:
+
+"npm run start"
