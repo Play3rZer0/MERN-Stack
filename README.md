@@ -19,3 +19,15 @@ Once cloned and installed, run the following from the main
 project folder:
 
 "npm run start"
+
+When running from Windows, using PowerShell, there are issues
+encountered when using the script.
+
+Make modifications in the package.json "scripts" section.
+
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "powershell.exe -Command \"$env:NODE_ENV='production'; node backend/server.js\"",
+    "dev": "powershell.exe -Command \"$env:NODE_ENV='development'; nodemon backend/server.js\"",
+"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+}
